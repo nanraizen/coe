@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteCond %{ENV:REDIRECT_STATUS} ^$
+    RewriteRule ^views(/.*?)(?:\.php)?$ $1 [R=301,L]
+
+    RewriteCond %{DOCUMENT_ROOT}/views/$1 -f
+    RewriteRule (.+\.(css|js|png|jpg|gif))$ /views/$1 [L]
+
+    RewriteCond %{DOCUMENT_ROOT}/views/$1.php -f
+    RewriteRule ^([^.]+)$ /views/$1.php [L]
+
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    Options -Indexes
+    Options -MultiViews
+</IfModule>

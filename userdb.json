@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Admin Nama",
+        "email": "admin@example.com",
+        "username": "admin",
+        "password": "admin123",
+        "role": "admin"
+    },
+    {
+        "name": "Student Nama",
+        "email": "student@example.com",
+        "username": "student",
+        "password": "student123",
+        "role": "student"
+    },
+    {
+        "name": "Mentor Nama",
+        "email": "mentor@example.com",
+        "username": "mentor",
+        "password": "mentor123",
+        "role": "mentor"
+    }
+]
