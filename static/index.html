@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
 
-    <title>Credential Course by I-FIK</title>
+    <title>Central of Excellence</title>
     <link rel="icon" href="/assets/img/favicon.png" type="image/svg+xml" />
 
-    <!-- CSS LIB -->
+    <!-- CSS -->
     <link rel="stylesheet" href="/assets/lib/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/main.min.css" />
 
-    <!-- JS LIB -->
+    <!-- JS -->
     <script src="/assets/lib/jquery/jquery.min.js"></script>
     <script src="/assets/lib/bootstrap/bootstrap.min.js"></script>
 
@@ -30,7 +30,7 @@
 
             <div class="navbar-logo">
                 <a href="/">
-                    <img src="/assets/img/ifik.png" alt="">
+                    <span class="material-symbols-outlined fill text-primary">school</span>
                     <b>Central of <br>Excellence</b>
                 </a>
             </div>
@@ -39,7 +39,7 @@
 
             <nav class="navbar-menu center">
                 <ul>
-                    <li class="active"><a href="microcredentials"><span>Microcredential</span></a></li>
+                    <li><a href="microcredentials"><span>Microcredential</span></a></li>
                     <li><a href="pelatihan"><span>Pelatihan</span></a></li>
                     <li><a href="certification"><span>Sertifikasi</span></a></li>
                     <li><a href="workshop"><span>Workshop</span></a></li>
@@ -52,31 +52,30 @@
 
             <nav class="navbar-menu right">
                 <ul>
-                    <li><a href="checkout" class="gap-12"><span class="material-symbols-outlined new-indicator">shopping_cart</span></a></li>
-                    <li class="dropdown">
 
+                    <li><a href="checkout" class="gap-12"><span class="material-symbols-outlined new-indicator">shopping_cart</span></a></li>
+
+                    <li class="dropdown">
                         <a class="btn btn-primary btn-outline btn-icon" data-toggle="dropdown">
                             <span>Masuk</span>
                             <span class="material-symbols-outlined">login</span>
                         </a>
-
-                        <div class="dropdown-menu dropdown-menu-right navbar--login">
-
-                            <form action="login">
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <form action="login" class="navbar--login">
 
                                 <div class="form-group">
                                     <label>Masuk untuk Melanjutkan</label>
                                 </div>
 
                                 <div class="form-group floating-label">
-                                    <input type="text" class="form-control form-control-44" id="user_username" placeholder="Username">
+                                    <input type="text" class="form-control" name="user_username" id="user_username" placeholder="Username">
                                     <label>Username</label>
                                 </div>
 
-                                <div class="form-group" style="margin-top:-8px;">
+                                <div class="form-group">
                                     <div class="input-group">
                                         <div class="floating-label">
-                                            <input type="text" class="form-control form-control-44" id="user_password" placeholder="Password">
+                                            <input type="password" class="form-control" id="user_password" placeholder="Password">
                                             <label>Password</label>
                                         </div>
                                         <span class="input-group-addon"><a href="lostPassword" class="text-primary underline">Lupa?</a></span>
@@ -84,22 +83,131 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-primary btn-block btn-icon btn-44"><span>Masuk</span><span class="material-symbols-outlined">login</span></button>
+                                    <button type="submit" class="btn btn-primary btn-block btn-icon"><span>Masuk</span><span class="material-symbols-outlined">login</span></button>
                                 </div>
 
                             </form>
-
                             <div class="navbar--regist">
                                 Belum memiliki akun? <a href="register">Mendaftar</a>.
                             </div>
-
                         </div>
                     </li>
+
                 </ul>
             </nav>
 
         </div>
     </div>
+
+    <!-- # -->
+
+    <section class="landing-phase1">
+        <div class="container">
+
+            <div class="left">
+                <h6 class="text-primary">HI THERE, WELCOME TO</h6>
+                <h1>Center of Excellence: Level-up Potensi <span class="text-primary">Kreatif</span> Kamu!</h1>
+                <p>Kembangkan potensi kreatif bersama Center of Excellence unggulan! Didukung oleh Fakultas Industri Kreatif, Telkom University, kami siap membantu Anda mencapai kesuksesan di dunia industri kreatif.</p>
+                <div class="flex gap-24">
+                    <a href="#" class="btn btn-primary btn-pill btn-icon btn-56"><span class="material-symbols-outlined" style="margin-left:-4px;">play_arrow</span><span>Mulai Jelajahi</span></a>
+                    <a href="#" class="btn btn-default btn-pill btn-icon btn-56"><span class="material-symbols-outlined" style="margin-left:-4px;">support_agent</span><span>Tanya Jawab</span></a>
+                </div>
+            </div>
+
+            <!-- ## -->
+
+            <div class="right">
+                <img src="/assets/img/kolase.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- # -->
+
+    <section class="landing-phase2">
+        <div class="container">
+
+            <div class="left">
+                <h4>Persembahan Spesial dari <span class="text-primary">Fakultas Industri Kreatif</span></h4>
+                <p>Pengalaman pembelajaran yang dipadukan dengan teknologi terkini dan kurikulum inovatif.</p>
+                <img src="/assets/img/wp/wp1.jpg" alt="">
+            </div>
+
+            <!-- ## -->
+
+            <div class="right">
+                <div class="item">
+                    <div class="btn btn-info btn-light btn-outline btn-pill btn-square btn-56"><span class="material-symbols-outlined fill">local_library</span></div>
+                    <b>Expert Mentors</b>
+                    <p>Panduan langsung dari para mentor berpengalaman dan ahli di bidang industri kreatif!</p>
+                </div>
+
+                <!-- ### -->
+
+                <div class="item">
+                    <div class="btn btn-success btn-light btn-outline btn-pill btn-square btn-56"><span class="material-symbols-outlined fill">device_reset</span></div>
+                    <b>Lifetime Access</b>
+                    <p>Akses seumur hidup ke materi pembelajaran untuk terus belajar tanpa batas waktu.</p>
+                </div>
+
+                <!-- ### -->
+
+                <div class="item">
+                    <div class="btn btn-danger btn-light btn-outline btn-pill btn-square btn-56"><span class="material-symbols-outlined fill">map</span></div>
+                    <b>Learn Anywhere</b>
+                    <p>Fleksibilitas belajar di mana saja dan kapan saja, sesuaikan dengan jadwal Anda!</p>
+                </div>
+
+                <!-- ### -->
+
+                <div class="item">
+                    <div class="btn btn-warning btn-light btn-outline btn-pill btn-square btn-56"><span class="material-symbols-outlined fill">fact_check</span></div>
+                    <b>Certificate</b>
+                    <p>Sertifikat resmi sebagai pengakuan atas selesainya pembelajaran yang Anda lakukan.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- # -->
+
+    <section class="landing-phase3">
+        .container
+    </section>
+
+    <!-- # -->
+
+    <section class="landing-phase6">
+        <div class="container">
+
+            <div class="right">
+                <img src="/assets/img/kolase2.png" alt="">
+            </div>
+
+            <!-- ## -->
+
+            <div class="left">
+                <h2>Kata <span class="text-warning">Mereka</span></h2>
+                <p><b>Dengarlah langsung dari para peserta kami! Mereka telah merasakan dampak positif dari Credential Course by I-FIK.</b></p>
+                <div class="vSlide their-review">
+                    <div class="vSlideItem">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur rem repudiandae, recusandae molestias sunt libero non inventore voluptatem. Tempore id perspiciatis vel voluptatum quae, maxime sint odit dicta quis in.
+                        </p>
+                        <div class="mini-profile">
+                            <a href="#" class="img-ava">
+                                <img src="/assets/img/ava/g3.jpg" alt="">
+                                <div class="flex-v"><b>Nilou</b><span>Zubayr Theater</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-- # -->
 
@@ -135,7 +243,7 @@
                 <div class="right flex-v gap-8">
                     <h6>TAUTAN</h6>
                     <ul class="dot-list">
-                        <li><a href="tentang-kami">Tentang IFIK Central of Excellence</a></li>
+                        <li><a href="tentang-coe">Tentang Central of Excellence</a></li>
                         <li><a href="syarat-ketentuan">Syarat &amp; Ketentuan</a></li>
                         <li><a href="kebijakan-privasi">Kebijakan Privasi</a></li>
                         <li><a href="pusat-bantuan">Pusat Bantuan</a></li>
@@ -149,7 +257,8 @@
     <!-- # -->
 
     <footer class="copyname">
-        IFIK Central of Excellence © <span id="release_year">2020</span><span id="this_year"></span> by Laboratorium, Studio & Bengkel IFIK.
+        Central of Excellence © 2023 <br>
+        IFIK &times; FEB AGENCY
     </footer>
 
     <!-- # -->
