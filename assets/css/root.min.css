@@ -23,11 +23,17 @@
     --default: #E9EBEE;
     --primary: #ff6734;
     --success: #22C55E;
-    --info: #06B6D4;
+    --info: #47A8BD;
     --warning: #F59E0B;
     --danger: #EF4444;
     --light: #FFFFFF;
     --dark: #3F3F46;
+    --yellow: #EAB308;
+    --lime: #7EC315;
+    --teal: #14B8A6;
+    --blue: #3B82F6;
+    --indigo: #6366F1;
+    --violet: #8B5CF6;
     --default-darker: #9CA3AF;
     --primary-darker: #ff6734;
     --success-darker: #15803D;

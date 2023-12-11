@@ -46,7 +46,7 @@ body {
     overflow: hidden;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 0 24px !important;
+    padding: 101px 24px 0 !important;
     background-color: transparent;
     cursor: default;
     font-size: var(--font-size);
@@ -666,6 +666,30 @@ a.underline:hover {
 
 .text-danger {
     color: var(--danger) !important;
+}
+
+.text-yellow {
+    color: var(--yellow) !important;
+}
+
+.text-lime {
+    color: var(--lime) !important;
+}
+
+.text-teal {
+    color: var(--teal) !important;
+}
+
+.text-blue {
+    color: var(--blue) !important;
+}
+
+.text-indigo {
+    color: var(--indigo) !important;
+}
+
+.text-violet {
+    color: var(--violet) !important;
 }
 
 /* === */
@@ -1874,6 +1898,30 @@ div[style='cursor:not-allowed'] .btn {
     color: var(--primary) !important;
 }
 
+.btn-yellow {
+    background-color: var(--yellow);
+}
+
+.btn-lime {
+    background-color: var(--lime);
+}
+
+.btn-teal {
+    background-color: var(--teal);
+}
+
+.btn-blue {
+    background-color: var(--blue);
+}
+
+.btn-indigo {
+    background-color: var(--indigo);
+}
+
+.btn-violet {
+    background-color: var(--violet);
+}
+
 /* === */
 
 .btn-light.btn-default,
@@ -2793,10 +2841,6 @@ tbody.collapse.in {
 
 .navbar-fixed {
     position: fixed;
-}
-
-.navbar-fixed-divider {
-    height: 101px;
 }
 
 .navbar>*,
