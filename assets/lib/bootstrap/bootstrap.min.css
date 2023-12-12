@@ -46,7 +46,7 @@ body {
     overflow: hidden;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 101px 24px 0 !important;
+    padding: 100px 24px 0 !important;
     background-color: transparent;
     cursor: default;
     font-size: var(--font-size);
@@ -1649,9 +1649,14 @@ textarea.form-control.no-resize {
     pointer-events: none;
 }
 
+.btn.no-height {
+    height: auto !important;
+}
+
 .btn-light::before,
 .btn-outline::before,
 .btn-transparent::before,
+.btn-transparent-primary::before,
 .btn.disabled:before,
 .btn:disabled:before {
     display: none;
@@ -1680,18 +1685,12 @@ textarea.form-control.no-resize {
     gap: 12px;
 }
 
-.btn-block {
-    display: flex;
-    width: 100%;
+.btn-icon>span.material-symbols-outlined:first-child {
+    margin-left: -3px;
 }
 
-.btn-block.btn-icon>span {
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.btn-icon>span+span.material-symbols-outlined {
-    margin-left: auto;
+.btn-icon>span:not([class])+span.material-symbols-outlined {
+    margin-right: -3px;
 }
 
 .btn-icon>svg {
@@ -1705,6 +1704,20 @@ textarea.form-control.no-resize {
     gap: 12px;
     flex-direction: column;
     height: unset;
+}
+
+.btn-block {
+    display: flex;
+    width: 100%;
+}
+
+.btn-block.btn-icon>span {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.btn-block>span:not([class])+span.material-symbols-outlined{
+    margin-left:auto;
 }
 
 div[style='cursor:not-allowed'] .btn {
@@ -1902,6 +1915,14 @@ div[style='cursor:not-allowed'] .btn {
 
 .btn-transparent:hover {
     color: var(--primary) !important;
+}
+
+.btn-transparent-primary {
+    color: var(--primary) !important;
+}
+
+.btn-transparent-primary:hover {
+    color: var(--text) !important;
 }
 
 .btn-white:hover {
@@ -2614,7 +2635,8 @@ tbody.collapse.in {
     padding: 0;
 }
 
-.input-group-addon.no-padding {
+.input-group-addon.no-padding,
+.no-padding {
     padding: 0;
 }
 
@@ -4658,6 +4680,10 @@ img.img-wrap.contain {
     margin-top: 36px !important;
 }
 
+.margin-t0 {
+    margin-top: 0 !important;
+}
+
 .margin-b12 {
     margin-bottom: 12px !important;
 }
@@ -4686,6 +4712,10 @@ img.img-wrap.contain {
     margin-left: 36px !important;
 }
 
+.margin-l0 {
+    margin-left: 0 !important;
+}
+
 .margin-r12 {
     margin-right: 12px !important;
 }
@@ -4696,6 +4726,76 @@ img.img-wrap.contain {
 
 .margin-r36 {
     margin-right: 36px !important;
+}
+
+.margin-r0 {
+    margin-right: 0 !important;
+}
+
+/* === */
+
+.padding-t12 {
+    padding-top: 12px !important;
+}
+
+.padding-t24 {
+    padding-top: 24px !important;
+}
+
+.padding-t36 {
+    padding-top: 36px !important;
+}
+
+.padding-t0 {
+    padding-top: 0 !important;
+}
+
+.padding-b12 {
+    padding-bottom: 12px !important;
+}
+
+.padding-b24 {
+    padding-bottom: 24px !important;
+}
+
+.padding-b36 {
+    padding-bottom: 36px !important;
+}
+
+.padding-b0 {
+    padding-bottom: 0 !important;
+}
+
+.padding-l12 {
+    padding-left: 12px !important;
+}
+
+.padding-l24 {
+    padding-left: 24px !important;
+}
+
+.padding-l36 {
+    padding-left: 36px !important;
+}
+
+.padding-l0 {
+    padding-left: 0 !important;
+}
+
+.padding-r12 {
+    padding-right: 12px !important;
+}
+
+.padding-r24 {
+    padding-right: 24px !important;
+}
+
+.padding-r36 {
+    padding-right: 36px !important;
+}
+
+.padding-r0 {
+    padding-right: 0 !important;
 }
 
 /* === */
