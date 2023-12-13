@@ -7,6 +7,7 @@
 @import url('/assets/font/fa-brands.css');
 @import url('/assets/css/root.min.css');
 @import url('/assets/css/social.min.css');
+@import url('/assets/lib/bootstrap/keyframes.min.css');
 
 /* === */
 
@@ -4948,5 +4949,3 @@ img.img-wrap.contain {
 }
 
 /* === */
-
-@import url('/assets/lib/bootstrap/keyframes.min.css');

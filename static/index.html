@@ -13,13 +13,13 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/lib/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="/assets/lib/lightslider/lightslider.min.css" />
+    <link rel="stylesheet" href="/assets/lib/tinyslider/tinyslider.min.css" />
     <link rel="stylesheet" href="/assets/css/main.min.css" />
 
     <!-- JS -->
     <script src="/assets/lib/jquery/jquery.min.js"></script>
     <script src="/assets/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="/assets/lib/lightslider/lightslider.min.js"></script>
+    <script src="/assets/lib/tinyslider/tinyslider.min.js"></script>
 
 </head>
 
@@ -41,12 +41,14 @@
 
             <nav class="navbar-menu center">
                 <ul>
-                    <!-- <li><a href="microcredentials"><span>Microcredential</span></a></li>
+                    <li><a href="microcredentials"><span>Microcredential</span></a></li>
                     <li><a href="pelatihan"><span>Pelatihan</span></a></li>
                     <li><a href="certification"><span>Sertifikasi</span></a></li>
                     <li><a href="workshop"><span>Workshop</span></a></li>
                     <li class="divider"></li>
-                    <li><a href="//ifik.telkomuniversity.ac.id" target="_blank"><span>Mainsite IFIK</span></a></li> -->
+                    <li><a href="//ifik.telkomuniversity.ac.id" target="_blank"><span>Mainsite IFIK</span></a></li>
+                </ul>
+                <!-- <ul>
                     <li><a href="/ifik"><span>Home</span></a></li>
                     <li class="dropdown">
                         <a data-toggle="dropdown"><span>Features</span><span class="material-symbols-outlined">expand_more</span></a>
@@ -77,33 +79,30 @@
                             <li><a href="/help/laa"><span>Layanan Akademik</span></a></li>
                         </ul>
                     </li>
-                </ul>
+                </ul> -->
             </nav>
 
             <!-- ## -->
 
             <nav class="navbar-menu right">
                 <ul>
-
                     <li><a href="/checkout" class="gap-12"><span class="material-symbols-outlined new-indicator">shopping_cart</span></a></li>
-
                     <li class="dropdown">
+
                         <a class="btn btn-primary btn-outline btn-icon" data-toggle="dropdown">
                             <span>Masuk</span>
                             <span class="material-symbols-outlined">login</span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <form action="/login" class="navbar--login">
 
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <form action="/login" class="signin">
                                 <div class="form-group">
                                     <label>Masuk untuk Melanjutkan</label>
                                 </div>
-
                                 <div class="form-group floating-label">
                                     <input type="text" class="form-control" name="user_username" id="user_username" placeholder="Username">
                                     <label>Username</label>
                                 </div>
-
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="floating-label">
@@ -113,18 +112,16 @@
                                         <span class="input-group-addon"><a href="/lostPassword" class="text-primary underline">Lupa?</a></span>
                                     </div>
                                 </div>
-
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary btn-block btn-icon"><span>Masuk</span><span class="material-symbols-outlined">login</span></button>
                                 </div>
-
                             </form>
-                            <div class="navbar--regist">
+                            <div class="signup">
                                 Belum memiliki akun? <a href="/register">Mendaftar</a>.
                             </div>
                         </div>
-                    </li>
 
+                    </li>
                 </ul>
             </nav>
 
@@ -136,7 +133,7 @@
     <section class="landing">
         <div class="container welcome">
 
-            <div class="contentLeft">
+            <div class="welcome--left">
                 <h6 class="text-primary">HI THERE, WELCOME TO</h6>
                 <h1>Center of Excellence: Level-up Potensi <span class="text-primary">Kreatif</span> Kamu!</h1>
                 <p>Kembangkan potensi kreatif bersama Center of Excellence! Didukung oleh Fakultas Industri Kreatif, Telkom University, kami siap membantu mencapai kesuksesan di dunia industri kreatif.</p>
@@ -148,7 +145,7 @@
 
             <!-- ## -->
 
-            <div class="contentRight">
+            <div class="welcome--right">
                 <img src="/assets/img/kolase.png" alt="">
             </div>
 
@@ -166,13 +163,10 @@
             </div>
 
             <div class="program">
-                <div class="item">
-                    <div class="subitem"><img src="/assets/img/wp/wp2.jpg" alt="" class="img-wrap"></div>
-                    <div class="subitem">
-                        <div>
-                            <img src="/assets/img/ifik.png" alt="">
-                            <h4>Microcredential</h4>
-                        </div>
+                <div class="program--child">
+                    <div class="thumbnail"><img src="/assets/img/wp/wp2.jpg" alt="" class="img-wrap"></div>
+                    <div class="metadata">
+                        <h4><img src="/assets/img/ifik.png" alt=""><span>Microcredential</span></h4>
                         <p>Full Online Live Conference - Short Courses Berbayar, Mini Online Learning S2 - Berbeda dengan Sertifikasiku, Proses Bisnisnya Bagaimana dari Metode Design Thinking.</p>
                         <a href="/microcredential" class="btn btn-transparent-primary btn-icon no-padding no-height"><span><b>Selengkapnya</b></span><span class="material-symbols-outlined">arrow_right_alt</span></a>
                     </div>
@@ -180,13 +174,10 @@
 
                 <!-- ## -->
 
-                <div class="item">
-                    <div class="subitem"><img src="/assets/img/wp/wp8.jpg" alt="" class="img-wrap"></div>
-                    <div class="subitem">
-                        <div>
-                            <img src="/assets/img/ifik.png" alt="">
-                            <h4>Pelatihan</h4>
-                        </div>
+                <div class="program--child">
+                    <div class="thumbnail"><img src="/assets/img/wp/wp8.jpg" alt="" class="img-wrap"></div>
+                    <div class="metadata">
+                        <h4><img src="/assets/img/ifik.png" alt=""><span>Pelatihan</span></h4>
                         <p>Metode Hybrid: Webinar dan Onsite, Ilustrasi, Membatik Celup/Tulis (Pelatihan dari Pihak FIK, yang Menjadi Syarat Sertifikasi).</p>
                         <a href="/microcredential" class="btn btn-transparent-primary btn-icon no-padding no-height"><span><b>Selengkapnya</b></span><span class="material-symbols-outlined">arrow_right_alt</span></a>
                     </div>
@@ -194,13 +185,10 @@
 
                 <!-- ## -->
 
-                <div class="item">
-                    <div class="subitem"><img src="/assets/img/wp/wp5.jpg" alt="" class="img-wrap"></div>
-                    <div class="subitem">
-                        <div>
-                            <img src="/assets/img/ifik.png" alt="">
-                            <h4>Sertifikasi</h4>
-                        </div>
+                <div class="program--child">
+                    <div class="thumbnail"><img src="/assets/img/wp/wp5.jpg" alt="" class="img-wrap"></div>
+                    <div class="metadata">
+                        <h4><img src="/assets/img/ifik.png" alt=""><span>Sertifikasi</span></h4>
                         <p>Bekerja Sama dengan LSP: Leskofi, Sertifikasi yang Unggul: Adobe; 3D Max, SketchUp, Rhinos, Implementasi dalam Bentuk Proses Bisnis, Aplikasi Berbasis Website MBKM Unggulan.</p>
                         <a href="/microcredential" class="btn btn-transparent-primary btn-icon no-padding no-height"><span><b>Selengkapnya</b></span><span class="material-symbols-outlined">arrow_right_alt</span></a>
                     </div>
@@ -208,13 +196,10 @@
 
                 <!-- ## -->
 
-                <div class="item">
-                    <div class="subitem"><img src="/assets/img/wp/wp1.jpg" alt="" class="img-wrap"></div>
-                    <div class="subitem">
-                        <div>
-                            <img src="/assets/img/ifik.png" alt="">
-                            <h4>Workshop</h4>
-                        </div>
+                <div class="program--child">
+                    <div class="thumbnail"><img src="/assets/img/wp/wp1.jpg" alt="" class="img-wrap"></div>
+                    <div class="metadata">
+                        <h4><img src="/assets/img/ifik.png" alt=""><span>Workshop</span></h4>
                         <p>Onsite Melalui Offline, Kelas Dibuka Jika Sudah Memenuhi Kuota Minimum, Contoh: Stool Design Mebel, Interior.</p>
                         <a href="/microcredential" class="btn btn-transparent-primary btn-icon no-padding no-height"><span><b>Selengkapnya</b></span><span class="material-symbols-outlined">arrow_right_alt</span></a>
                     </div>
@@ -235,7 +220,7 @@
             </div>
 
             <div class="mentor">
-                <div class="item">
+                <div class="mentor--child">
                     <a href="/mentor/profile" class="pp"><img src="/assets/img/ava/g0.jpg" alt=""></a>
                     <h6 class="title"><a href="/mentor/profile">Paimon</a></h6>
                     <p class="focus">Travelling Guide</p>
@@ -243,7 +228,7 @@
 
                 <!-- ## -->
 
-                <div class="item">
+                <div class="mentor--child">
                     <a href="/mentor/profile" class="pp"><img src="/assets/img/ava/g3.jpg" alt=""></a>
                     <h6 class="title"><a href="/mentor/profile">Nilou</a></h6>
                     <p class="focus">Art of Dance</p>
@@ -251,7 +236,7 @@
 
                 <!-- ## -->
 
-                <div class="item">
+                <div class="mentor--child">
                     <a href="/mentor/profile" class="pp"><img src="/assets/img/ava/g2.jpg" alt=""></a>
                     <h6 class="title"><a href="/mentor/profile">Keqing</a></h6>
                     <p class="focus">Mix Media</p>
@@ -259,7 +244,7 @@
 
                 <!-- ## -->
 
-                <div class="item">
+                <div class="mentor--child">
                     <a href="/mentor/profile" class="pp"><img src="/assets/img/ava/g4.jpg" alt=""></a>
                     <h6 class="title"><a href="/mentor/profile">Yoimiya</a></h6>
                     <p class="focus">Art of Fireworks</p>
@@ -278,16 +263,16 @@
     <section class="landing backdrop">
         <div class="container review">
 
-            <div class="contentLeft">
+            <div class="review--left">
                 <img src="/assets/img/kolase2.png" alt="">
             </div>
 
-            <div class="contentRight">
+            <div class="review--right">
                 <h2>Kata <span class="text-warning">Mereka</span></h2>
                 <p><b>Dengarlah langsung dari para peserta kami! Mereka telah merasakan dampak positif dari Credential Course by I-FIK.</b></p>
-                <div class="review-slider">
+                <div class="review--slide">
 
-                    <div class="item">
+                    <div class="review--child">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur rem repudiandae, recusandae molestias sunt libero non inventore voluptatem. Tempore id perspiciatis vel voluptatum quae, maxime sint odit dicta quis in.</p>
                         <div class="mini-profile">
                             <a href="#" class="img-ava">
@@ -299,7 +284,7 @@
 
                     <!-- ## -->
 
-                    <div class="item">
+                    <div class="review--child">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur rem repudiandae, recusandae molestias sunt libero non inventore voluptatem. Tempore id perspiciatis vel voluptatum quae, maxime sint odit dicta quis in.</p>
                         <div class="mini-profile">
                             <a href="#" class="img-ava">
@@ -311,7 +296,7 @@
 
                     <!-- ## -->
 
-                    <div class="item">
+                    <div class="review--child">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur rem repudiandae, recusandae molestias sunt libero non inventore voluptatem. Tempore id perspiciatis vel voluptatum quae, maxime sint odit dicta quis in.</p>
                         <div class="mini-profile">
                             <a href="#" class="img-ava">
@@ -401,29 +386,18 @@
 
     <!-- # -->
 
+    <div class="tns-controls" aria-label="Carousel Navigation" tabindex="0">
+        <a data-controls="prev" tabindex="-1" aria-controls="tns1"><span class="material-symbols-outlined flip-h">arrow_right_alt</span></a>
+        <a data-controls="next" tabindex="-1" aria-controls="tns1"><span class="material-symbols-outlined">arrow_right_alt</span></a>
+    </div>
+
     <script src="/assets/js/mux.min.js"></script>
 
     <script>
-        $(function () {
-            $(".course-slider").lightSlider({
-                item: 2,
-                slideMargin: 120,
-                loop: true,
-                autoWidth: true,
-                centerSlide: true,
-                adaptiveHeight: true,
-                pager: false,
-            });
-            $(".review-slider").lightSlider({
-                item: 1,
-                slideMargin: 24,
-                loop: true,
-                auto: true,
-                pause: 3000,
-                pauseOnHover: true,
-                adaptiveHeight: true,
-                controls: false,
-            });
+        var slider1 = tns({
+            container: '.review--slide',
+            loop: true,
+            autoplay: true,
         });
     </script>
 
