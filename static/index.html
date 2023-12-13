@@ -41,10 +41,10 @@
 
             <nav class="navbar-menu center">
                 <ul>
-                    <li><a href="microcredentials"><span>Microcredential</span></a></li>
-                    <li><a href="pelatihan"><span>Pelatihan</span></a></li>
-                    <li><a href="certification"><span>Sertifikasi</span></a></li>
-                    <li><a href="workshop"><span>Workshop</span></a></li>
+                    <li><a href="/microcredential"><span>Microcredential</span></a></li>
+                    <li><a href="/pelatihan"><span>Pelatihan</span></a></li>
+                    <li><a href="/certification"><span>Sertifikasi</span></a></li>
+                    <li><a href="/workshop"><span>Workshop</span></a></li>
                     <li class="divider"></li>
                     <li><a href="//ifik.telkomuniversity.ac.id" target="_blank"><span>Mainsite IFIK</span></a></li>
                 </ul>
@@ -204,6 +204,79 @@
                         <a href="/microcredential" class="btn btn-transparent-primary btn-icon no-padding no-height"><span><b>Selengkapnya</b></span><span class="material-symbols-outlined">arrow_right_alt</span></a>
                     </div>
                 </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- # -->
+
+    <section class="landing padding-b0">
+        <div class="container1920 course-container">
+
+            <div class="section-title text-center">
+                <h2>Sedang <span class="text-success">Hangat</span></h2>
+                <p>Jelajahi beragam materi, dirancang oleh para ahli industri kreatif. Dapatkan pengetahuan terkini dan keterampilan terbaik dari kami!</p>
+            </div>
+
+            <div class="course--slide">
+                <section>
+                    <div class="course">
+
+                        <div class="course--title">
+                            <img src="/assets/img/ifik.png" alt="">
+                            <h4>Microcredential</h4>
+                        </div>
+
+                        <div class="course-empty"></div>
+
+                    </div>
+                </section>
+
+                <!-- ## -->
+
+                <section>
+                    <div class="course">
+
+                        <div class="course--title">
+                            <img src="/assets/img/ifik.png" alt="">
+                            <h4>Pelatihan</h4>
+                        </div>
+
+                        <div class="course-empty"></div>
+
+                    </div>
+                </section>
+
+                <!-- ## -->
+
+                <section>
+                    <div class="course">
+
+                        <div class="course--title">
+                            <img src="/assets/img/ifik.png" alt="">
+                            <h4>Sertifikasi</h4>
+                        </div>
+
+                        <div class="course-empty"></div>
+
+                    </div>
+                </section>
+
+                <!-- ## -->
+
+                <section>
+                    <div class="course">
+
+                        <div class="course--title">
+                            <img src="/assets/img/ifik.png" alt="">
+                            <h4>Workshop</h4>
+                        </div>
+
+                        <div class="course-empty"></div>
+
+                    </div>
+                </section>
             </div>
 
         </div>
@@ -386,15 +459,19 @@
 
     <!-- # -->
 
-    <div class="tns-controls" aria-label="Carousel Navigation" tabindex="0">
-        <a data-controls="prev" tabindex="-1" aria-controls="tns1"><span class="material-symbols-outlined flip-h">arrow_right_alt</span></a>
-        <a data-controls="next" tabindex="-1" aria-controls="tns1"><span class="material-symbols-outlined">arrow_right_alt</span></a>
-    </div>
-
     <script src="/assets/js/mux.min.js"></script>
 
     <script>
         var slider1 = tns({
+            container: '.course--slide',
+            items: 2,
+            center: true,
+            autoWidth: true,
+            controls: true,
+            nav: false,
+            gutter: 96
+        });
+        var slider2 = tns({
             container: '.review--slide',
             loop: true,
             autoplay: true,
