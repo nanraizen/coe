@@ -1145,7 +1145,7 @@ textarea.form-control.no-resize {
     left: 12px;
     visibility: visible;
     opacity: 1;
-    height: 44px;
+    height: 48px;
     padding: 0 4px;
     transition: .15s var(--cubic);
     transition-delay: .1s;
@@ -1159,14 +1159,17 @@ textarea.form-control.no-resize {
 }
 
 .floating-label .form-control-36~label {
+    height: 36px;
     padding: 0 1px;
 }
 
 .floating-label .form-control-40~label {
+    height: 40px;
     padding: 0 2px;
 }
 
 .floating-label .form-control-44~label {
+    height: 44px;
     padding: 0 3px;
 }
 
@@ -1717,8 +1720,8 @@ textarea.form-control.no-resize {
     margin-left: 0;
 }
 
-.btn-block>span:not([class])+span.material-symbols-outlined{
-    margin-left:auto;
+.btn-block>span:not([class])+span.material-symbols-outlined {
+    margin-left: auto;
 }
 
 div[style='cursor:not-allowed'] .btn {
@@ -3701,6 +3704,10 @@ tbody.collapse.in {
 .panel-footer {
     padding: 16px 24px 17px;
     border-top: 1px solid;
+}
+
+.panel-blank {
+    border: 0;
 }
 
 .panel-default .panel-heading,
