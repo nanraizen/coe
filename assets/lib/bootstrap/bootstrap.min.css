@@ -47,7 +47,7 @@ body {
     overflow: hidden;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 100px 24px 0 !important;
+    padding: 100px 48px 0 !important;
     background-color: transparent;
     cursor: default;
     font-size: var(--font-size);
@@ -1689,7 +1689,7 @@ textarea.form-control.no-resize {
     gap: 12px;
 }
 
-.btn-icon>span.material-symbols-outlined:first-child {
+.btn-icon>span.material-symbols-outlined:first-child:not(:last-child) {
     margin-left: -3px;
 }
 
