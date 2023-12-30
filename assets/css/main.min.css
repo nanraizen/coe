@@ -294,6 +294,30 @@ h1.feature-title img{height:36px;}
 
 
 
-.checkout{gap:48px;flex-direction:row!important;}
+.checkout{gap:48px!important;flex-direction:row!important;}
 .checkout--left{flex:1;padding-right:48px;border-right:1px solid var(--g2x);}
-.checkout--right{width:30%;}
+.checkout--left .list-group{margin-bottom:24px;}
+.checkout--left .list-group-item{background-color:var(--g0x);border-width:1px!important;border-radius:16px;border-color:var(--g2x);display:flex;flex-wrap:wrap;padding:24px;gap:24px;}
+.checkout--left .list-group-item:not(:last-child){margin-bottom:24px;}
+.checkout--left .list-group-item .thumbnail{box-shadow:0 2px 6px -2px rgba(0 0 0 / .1);position:relative;overflow:hidden;border-radius:12px;width:120px;height:120px}
+.checkout--left .list-group-item .thumbnail::after{content:' ';display:block;position:absolute;top:0;bottom:0;left:0;right:0;opacity:0;transition:.15s ease;background-color:var(--dark)}
+.checkout--left .list-group-item .thumbnail:hover::after{opacity:.25}
+.checkout--left .list-group-item .item-metadata{display:flex;flex-wrap:wrap;flex:1;flex-direction:column;}
+.checkout--left .list-group-item h4{font-size:16px;}
+.checkout--left .list-group-item .price{margin-top:12px;}
+.checkout--left .list-group-item .price p:first-child{color:var(--g4x);}
+.checkout--left .list-group-item .qtydel{margin-top:auto;}
+.checkout--left .list-group-item .qtydel .plusminus{border-radius:28px;background-color:transparent;border:1px solid var(--g3x);gap:4px;padding:0 2px;display:flex;flex-wrap:wrap}
+.checkout--left .list-group-item .qtydel .plusminus>*{margin:auto 0}
+.checkout--left .list-group-item .qtydel .plusminus input{width:32px;height:28px;padding:0;border:0;border-radius:0;background-color:transparent;font-size:16px;text-align:center}
+.checkout--left .list-group-item .qtydel .del{position:relative;top:3px;color:var(--danger)!important;}
+.checkout--left .list-group-item .qtydel .del:hover{color:var(--primary)!important;}
+.checkout--left .list-group-item .subtotal p{display:flex;flex-wrap:wrap;}
+.checkout--right{width:280px;}
+.checkout--right .subtotal{margin-bottom:24px;}
+.checkout--right .subtotal p{display:flex;flex-wrap:wrap;}
+.checkout--right .subtotal p:nth-child(n+2){margin-top:12px;}
+.checkout--right .subtotal p span:first-child:not(:last-child){color:var(--g4x);}
+.checkout--right .subtotal p span:last-child{margin-left:auto;}
+.checkout--right .subtotal p:last-child{border-top:1px dashed var(--g2x);}
+.checkout--right .subtotal p:last-child span:last-child{color:var(--primary);font-weight:var(--font-semibold);font-size:16px;padding-top:12px;}

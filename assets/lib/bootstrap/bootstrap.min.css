@@ -1674,7 +1674,7 @@ textarea.form-control.no-resize {
 }
 
 .btn>span:not([class]) {
-    padding-bottom: 1px;
+    padding-bottom: 0;
 }
 
 .btn .fab {
