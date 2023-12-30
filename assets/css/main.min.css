@@ -291,9 +291,8 @@ h1.feature-title img{height:36px;}
 .akun-form .text-center{margin:32px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:6px;}
 .akun-form .text-center>*{margin:auto 0;}
 .akun-form .text-center u{position:relative;height:16px;text-decoration:none!important;border-right:1px solid #d5d5d8}
-
-
-
+/* === */
+/* === */
 .checkout{gap:48px!important;flex-direction:row!important;}
 .checkout--left{flex:1;padding-right:48px;border-right:1px solid var(--g2x);}
 .checkout--left .list-group{margin-bottom:24px;}
@@ -321,3 +320,5 @@ h1.feature-title img{height:36px;}
 .checkout--right .subtotal p span:last-child{margin-left:auto;}
 .checkout--right .subtotal p:last-child{border-top:1px dashed var(--g2x);}
 .checkout--right .subtotal p:last-child span:last-child{color:var(--primary);font-weight:var(--font-semibold);font-size:16px;padding-top:12px;}
+/* === */
+/* === */
