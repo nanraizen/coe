@@ -2,7 +2,7 @@
  * Name:IFIK CoE Layout
 */
 
-.webcontent{padding:48px}
+.webcontent{padding:48px;padding-bottom:0}
 .webcontent+.webcontent{padding-top:0}
 .userform{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .credential-form input{text-transform:uppercase}
@@ -12,6 +12,7 @@
 .navbar{padding-right:48px;padding-left:48px}
 .navbar nav>ul>li.active>a:not(.btn):not([class*='btn-img']){height:40px}
 .navbar nav>ul>li.active>a:not(.btn):not([class*='btn-img']){padding:0 20px;background-color:var(--primary);border-radius:48px;color:var(--txt)}
+.navbar nav>ul>li.active>a .material-symbols.new-indicator::before{border-color:var(--primary)}
 .navbar-logo [class*='btn-img'] img{height:36px}
 .dropdown-menu{border-width:2px;border-radius:12px}
 .label-dkv,.label-di,.label-dp,.label-kt,.label-sr{height:24px;padding:0;background-color:transparent;font-weight:var(--font-bold);line-height:26px}
@@ -150,6 +151,9 @@
 .course-cert{background-color:var(--g0x);border:1px solid var(--g2x);border-radius:12px;position:relative;overflow:hidden}
 .course-cert img{display:block;margin:0 auto}
 
+.course-price p{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:12px;}
+.course-price p>*{margin:auto 0;border-radius:24px;color:var(--g4x)}
+
 /* SI PALING GRID */
 [class*='ft-'] .list-group-item{width:calc(50% - 12px);display:flex;flex-direction:column;padding:24px;border-radius:12px!important;gap:12px}
 [class*='ft-'] .list-group-item .thumbnail{background-color:var(--primary);border-radius:8px;box-shadow:var(--img-shadow);position:relative}
@@ -172,3 +176,24 @@
 .tagihan .wrapper{background-color:var(--primary15);border:1px dashed var(--primary);padding:48px 60px;border-radius:12px}
 .tagihan .wrapper-left h2{margin:16px 0;color:var(--danger)}
 #bukti_bayar .browse_file span:not([class]){display:none!important}
+
+.modal{background-color:var(--backdrop)}
+
+/* DOT LOG */
+.dotlog{padding-left:8px}
+.dotlog .list-group-item{border-radius:0;border-width:0;padding-bottom:0;padding-top:0;padding-left:28px}
+.dotlog .list-group-item:not(:last-child){padding-bottom:24px}
+.dotlog .list-group-item::before{border-left:1px dashed var(--g3x);content:' ';display:block;position:absolute;left:0;top:0;bottom:0}
+.dotlog .list-group-item:first-child:before{top:36px}
+.dotlog .list-group-item:last-child:before{bottom:unset;height:36px}
+.dotlog .list-group-item span{font-size:12px;display:block;margin-bottom:4px;color:var(--g4x)}
+.dotlog .list-group-item div{position:relative}
+.dotlog .list-group-item div::before,.dotlog .list-group-item div::after{position:absolute;left:-32px;top:6px;z-index:1;content:' ';display:block;height:9px;width:9px;border-radius:50%;background-color:var(--primary);box-shadow:0 0 0 6px var(--primary35)}
+.dotlog .list-group-item div::after{background-color:transparent;box-shadow:0 0 0 9px var(--bg);z-index:0;}
+.dotlog .list-group-item:not(:first-child) div::before{background-color:var(--g3x);box-shadow:0 0 0 6px var(--g1x)}
+.dotlog .list-group-item div small{display:block;font-size:12px;color:var(--g5x);margin-top:4px}
+
+
+.notif .material-symbols{font-variation-settings:'FILL'1}
+.notif .list-group-item div a{color:var(--primary)}
+.notif .list-group-item div a:hover{text-decoration:underline}

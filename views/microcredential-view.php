@@ -49,8 +49,19 @@
             <!-- ## -->
 
             <section class="wrapper-right">
-                <a href="#" class="btn btn-primary btn-block btn-icon btn-56"><span>Daftar Sekarang</span><span class="material-symbols">edit_note</span></a>
+                <a href="<?php echo getUrl('registration'); ?>" class="btn btn-primary btn-block btn-icon btn-56"><span><b>Daftar Sekarang</b></span><span class="material-symbols">edit_note</span></a>
                 <a class="btn btn-default btn-block btn-icon btn-56 mt-12"><span>Tonton Pratinjau</span><span class="material-symbols">play_circle</span></a>
+
+                <hr class="dash">
+
+                <div class="course-price">
+                    <h6 class="mb-20">Biaya Layanan</h6>
+                    <p>
+                        <del>Rp 300.000</del>
+                        <span class="label label-danger"><span>Hemat</span><span>17%</span></span>
+                    </p>
+                    <h3 class="text-danger text-semibold">Rp 249.000</h3>
+                </div>
 
                 <hr class="dash">
 
