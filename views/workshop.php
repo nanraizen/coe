@@ -71,46 +71,40 @@
 
             <!-- ## -->
 
-            <div class="wrapper">
-                <div class="wrapper-full">
-
-                    <div class="list-group grid hover gap-24 ft-wksp">
-                        <a href="<?php echo getUrl('workshop-view'); ?>" class="list-group-item">
-                            <div class="cover-wrap img-hover"><img src="/assets/img/wp/8.jpg" alt=""></div>
-                            <div>
-                                <h5 class="mb-12">Workshop Fotografi Studio</h5>
-                                <span><b>Batch 3</b> / 5 Jan 2024 - 5 Feb 2024</span>
-                            </div>
-                        </a>
-                        <a href="<?php echo getUrl('workshop-view'); ?>" class="list-group-item">
-                            <div class="cover-wrap img-hover"><img src="/assets/img/wp/7.jpg" alt=""></div>
-                            <div>
-                                <h5 class="mb-12">Workshop Menggambar Tradi</h5>
-                                <span><b>Batch 1</b> / 5 Jan 2024 - 5 Feb 2024</span>
-                            </div>
-                        </a>
-                        <a href="<?php echo getUrl('workshop-view'); ?>" class="list-group-item disabled">
-                            <div class="cover-wrap img-hover"><img src="/assets/img/wp/4.jpg" alt=""></div>
-                            <div>
-                                <h5 class="mb-12">Workshop UI/UX</h5>
-                                <span><b>Kuota Penuh</b></span>
-                            </div>
-                        </a>
-                        <a href="<?php echo getUrl('workshop-view'); ?>" class="list-group-item disabled">
-                            <div class="cover-wrap img-hover"><img src="/assets/img/wp/2.jpg" alt=""></div>
-                            <div>
-                                <h5 class="mb-12">Workshop Digital Marketing</h5>
-                                <span><b>Belum Tersedia</b></span>
-                            </div>
-                        </a>
+            <div class="list-group grid hover gap-24 ft-wksp">
+                <a href="<?php echo getUrl('workshop-view'); ?>" class="list-group-item">
+                    <div class="cover-wrap img-hover"><img src="/assets/img/wp/8.jpg" alt=""></div>
+                    <div>
+                        <h5 class="mb-12">Workshop Fotografi Studio</h5>
+                        <span><b>Batch 3</b> / 5 Jan 2024 - 5 Feb 2024</span>
                     </div>
-
-                    <!-- ### -->
-
-                    <?php include(getPart() . 'pagination.php'); ?>
-
-                </div>
+                </a>
+                <a href="<?php echo getUrl('workshop-view'); ?>" class="list-group-item">
+                    <div class="cover-wrap img-hover"><img src="/assets/img/wp/7.jpg" alt=""></div>
+                    <div>
+                        <h5 class="mb-12">Workshop Menggambar Tradi</h5>
+                        <span><b>Batch 1</b> / 5 Jan 2024 - 5 Feb 2024</span>
+                    </div>
+                </a>
+                <a href="<?php echo getUrl('workshop-view'); ?>" class="list-group-item disabled">
+                    <div class="cover-wrap img-hover"><img src="/assets/img/wp/4.jpg" alt=""></div>
+                    <div>
+                        <h5 class="mb-12">Workshop UI/UX</h5>
+                        <span><b>Kuota Penuh</b></span>
+                    </div>
+                </a>
+                <a href="<?php echo getUrl('workshop-view'); ?>" class="list-group-item disabled">
+                    <div class="cover-wrap img-hover"><img src="/assets/img/wp/2.jpg" alt=""></div>
+                    <div>
+                        <h5 class="mb-12">Workshop Digital Marketing</h5>
+                        <span><b>Belum Tersedia</b></span>
+                    </div>
+                </a>
             </div>
+
+            <!-- ### -->
+
+            <?php include(getPart() . 'pagination.php'); ?>
 
         </div>
     </section>

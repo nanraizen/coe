@@ -11,7 +11,7 @@
     --font-semibold     : 600;
     --font-bold         : 700;
     --font-size         : 14px;
-    --backdrop          : rgba(24 24 27 / .65);
+    --backdrop          : rgba(24 24 27 / .75);
     --cubic             : cubic-bezier(.58, .01, .04, .98);
     --img-shadow        : 0 2px 6px -2px rgba(0 0 0 / .1);
 

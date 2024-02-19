@@ -70,38 +70,32 @@
 
             <!-- ## -->
 
-            <div class="wrapper">
-                <div class="wrapper-full">
-
-                    <div class="list-group grid hover gap-24 ft-cert">
-                        <div class="list-group-item">
-                            <a href="<?php echo getUrl('certification-view'); ?>" class="img-wrap"><img src="/assets/img/icon/adobe_bg.jpg" alt=""></a>
-                            <h5>
-                                <a href="<?php echo getUrl('certification-view'); ?>">Sertifikasi Adobe</a>
-                                <span class="material-symbols color-twitter skala" data-toggle="tooltip" data-placement="left" title="Internasional">public</span>
-                            </h5>
-                            <p><b>Adobe</b></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente magni accusantium neque blanditiis? Quibusdam libero.</p>
-                            <a href="<?php echo getUrl('certification-view'); ?>" class="btn btn-primary"><span>Selengkapnya</span></a>
-                        </div>
-                        <div class="list-group-item">
-                            <a href="<?php echo getUrl('certification-view'); ?>" class="img-wrap"><img src="/assets/img/icon/leskofi_bg.jpg" alt=""></a>
-                            <h5>
-                                <a href="<?php echo getUrl('certification-view'); ?>">Sertifikasi Fotografi</a>
-                                <span class="skala" data-toggle="tooltip" data-placement="left" title="Nasional"><img src="/assets/img/icon/id.png" alt="" style="width:24px"></span>
-                            </h5>
-                            <p><b>Leskofi</b></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente magni accusantium neque blanditiis? Quibusdam libero.</p>
-                            <a href="<?php echo getUrl('certification-view'); ?>" class="btn btn-primary"><span>Selengkapnya</span></a>
-                        </div>
-                    </div>
-
-                    <!-- ### -->
-
-                    <?php include(getPart() . 'pagination.php'); ?>
-
+            <div class="list-group grid hover gap-24 ft-cert">
+                <div class="list-group-item">
+                    <a href="<?php echo getUrl('certification-view'); ?>" class="img-wrap"><img src="/assets/img/icon/adobe_bg.jpg" alt=""></a>
+                    <h5>
+                        <a href="<?php echo getUrl('certification-view'); ?>">Sertifikasi Adobe</a>
+                        <span class="material-symbols color-twitter skala" data-toggle="tooltip" data-placement="left" title="Internasional">public</span>
+                    </h5>
+                    <p><b>Adobe</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente magni accusantium neque blanditiis? Quibusdam libero.</p>
+                    <a href="<?php echo getUrl('certification-view'); ?>" class="btn btn-primary"><span>Selengkapnya</span></a>
+                </div>
+                <div class="list-group-item">
+                    <a href="<?php echo getUrl('certification-view'); ?>" class="img-wrap"><img src="/assets/img/icon/leskofi_bg.jpg" alt=""></a>
+                    <h5>
+                        <a href="<?php echo getUrl('certification-view'); ?>">Sertifikasi Fotografi</a>
+                        <span class="skala" data-toggle="tooltip" data-placement="left" title="Nasional"><img src="/assets/img/icon/id.png" alt="" style="width:24px"></span>
+                    </h5>
+                    <p><b>Leskofi</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente magni accusantium neque blanditiis? Quibusdam libero.</p>
+                    <a href="<?php echo getUrl('certification-view'); ?>" class="btn btn-primary"><span>Selengkapnya</span></a>
                 </div>
             </div>
+
+            <!-- ### -->
+
+            <?php include(getPart() . 'pagination.php'); ?>
 
         </div>
     </section>

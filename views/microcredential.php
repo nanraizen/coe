@@ -74,32 +74,26 @@
 
             <!-- ## -->
 
-            <div class="wrapper">
-                <div class="wrapper-full">
-
-                    <div class="list-group grid hover gap-24 ft-mcrd">
-                        <div class="list-group-item">
-                            <a href="<?php echo getUrl('microcredential-view'); ?>" class="cover-wrap img-shadow img-hover"><img src="/assets/img/wp/8.jpg" alt=""></a>
-                            <h5><a href="<?php echo getUrl('microcredential-view'); ?>">Mastering Potrait Photography</a></h5>
-                            <p><b>Jennifer Martinez</b></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente magni accusantium neque blanditiis? Quibusdam libero.</p>
-                            <a href="<?php echo getUrl('microcredential-view'); ?>" class="btn btn-primary btn-block"><span>Selengkapnya</span></a>
-                        </div>
-                        <div class="list-group-item">
-                            <a href="<?php echo getUrl('microcredential-view'); ?>" class="cover-wrap img-shadow img-hover"><img src="/assets/img/wp/4.jpg" alt=""></a>
-                            <h5><a href="<?php echo getUrl('microcredential-view'); ?>">Kajian Desain UI/UX</a></h5>
-                            <p><b>Dr. Andreas Rio Adriyanto, S.E., M.Eng.</b></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente magni accusantium neque blanditiis.</p>
-                            <a href="<?php echo getUrl('microcredential-view'); ?>" class="btn btn-primary"><span>Selengkapnya</span></a>
-                        </div>
-                    </div>
-
-                    <!-- ### -->
-
-                    <?php include(getPart() . 'pagination.php'); ?>
-
+            <div class="list-group grid hover gap-24 ft-mcrd">
+                <div class="list-group-item">
+                    <a href="<?php echo getUrl('microcredential-view'); ?>" class="cover-wrap img-shadow img-hover"><img src="/assets/img/wp/8.jpg" alt=""></a>
+                    <h5><a href="<?php echo getUrl('microcredential-view'); ?>">Mastering Potrait Photography</a></h5>
+                    <p><b>Jennifer Martinez</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente magni accusantium neque blanditiis? Quibusdam libero.</p>
+                    <a href="<?php echo getUrl('microcredential-view'); ?>" class="btn btn-primary btn-block"><span>Selengkapnya</span></a>
+                </div>
+                <div class="list-group-item">
+                    <a href="<?php echo getUrl('microcredential-view'); ?>" class="cover-wrap img-shadow img-hover"><img src="/assets/img/wp/4.jpg" alt=""></a>
+                    <h5><a href="<?php echo getUrl('microcredential-view'); ?>">Kajian Desain UI/UX</a></h5>
+                    <p><b>Dr. Andreas Rio Adriyanto, S.E., M.Eng.</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente magni accusantium neque blanditiis.</p>
+                    <a href="<?php echo getUrl('microcredential-view'); ?>" class="btn btn-primary"><span>Selengkapnya</span></a>
                 </div>
             </div>
+
+            <!-- ### -->
+
+            <?php include(getPart() . 'pagination.php'); ?>
 
         </div>
     </section>

@@ -19,9 +19,9 @@
             <p>Panduan praktis buat kamu yang mau bikin foto potret jadi makin keren! Dari trik pencahayaan sampai cara interaksi sama model. Cocok buat pemula atau yang udah mahir, biar potret kamu makin cetar! 📸✨</p>
 
             <div class="flex gap-24 mt-12">
-                <div class="btn btn-transparent btn-icon btn-0 noact pt-0 pb-0 pl-0 pr-0 gap-12"><span class="material-symbols fill">language</span><span>Bahasa Indonesia</span></div>
-                <div class="btn btn-transparent btn-icon btn-0 noact pt-0 pb-0 pl-0 pr-0 gap-12"><span class="material-symbols fill">book_5</span><span>5 Materi</span></div>
-                <div class="btn btn-transparent btn-icon btn-0 noact pt-0 pb-0 pl-0 pr-0 gap-12"><span class="material-symbols fill">pace</span><span>4j 52m</span></div>
+                <div class="btn btn-transparent btn-icon btn-0 noact gap-12"><span class="material-symbols fill">language</span><span>Bahasa Indonesia</span></div>
+                <div class="btn btn-transparent btn-icon btn-0 noact gap-12"><span class="material-symbols fill">book_5</span><span>5 Materi</span></div>
+                <div class="btn btn-transparent btn-icon btn-0 noact gap-12"><span class="material-symbols fill">pace</span><span>4j 52m</span></div>
             </div>
 
         </div>

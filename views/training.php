@@ -71,32 +71,26 @@
 
             <!-- ## -->
 
-            <div class="wrapper">
-                <div class="wrapper-full">
-
-                    <div class="list-group grid hover gap-24 ft-trng">
-                        <div class="list-group-item">
-                            <a href="<?php echo getUrl('training-view'); ?>" class="img-wrap img-shadow img-hover"><img src="/assets/img/wp/1.jpg" alt=""></a>
-                            <h5><a href="<?php echo getUrl('training-view'); ?>">Pelatihan 3D Printing</a></h5>
-                            <p><b>Batch 2</b> / 5 Jan 2024 - 5 Feb 2024</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente magni accusantium neque blanditiis? Quibusdam libero.</p>
-                            <a href="<?php echo getUrl('training-view'); ?>" class="btn btn-primary btn-block"><span>Selengkapnya</span></a>
-                        </div>
-                        <div class="list-group-item">
-                            <a href="<?php echo getUrl('training-view'); ?>" class="img-wrap img-shadow img-hover"><img src="/assets/img/wp/2.jpg" alt=""></a>
-                            <h5><a href="<?php echo getUrl('training-view'); ?>">Pelatihan Pembuatan Kemasan Produk</a></h5>
-                            <p><b>Batch 2</b> / 5 Jan 2024 - 5 Feb 2024</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente magni accusantium neque blanditiis.</p>
-                            <a href="<?php echo getUrl('training-view'); ?>" class="btn btn-primary"><span>Selengkapnya</span></a>
-                        </div>
-                    </div>
-
-                    <!-- ### -->
-
-                    <?php include(getPart() . 'pagination.php'); ?>
-
+            <div class="list-group grid hover gap-24 ft-trng">
+                <div class="list-group-item">
+                    <a href="<?php echo getUrl('training-view'); ?>" class="img-wrap img-shadow img-hover"><img src="/assets/img/wp/1.jpg" alt=""></a>
+                    <h5><a href="<?php echo getUrl('training-view'); ?>">Pelatihan 3D Printing</a></h5>
+                    <p><b>Batch 2</b> / 5 Jan 2024 - 5 Feb 2024</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente magni accusantium neque blanditiis? Quibusdam libero.</p>
+                    <a href="<?php echo getUrl('training-view'); ?>" class="btn btn-primary btn-block"><span>Selengkapnya</span></a>
+                </div>
+                <div class="list-group-item">
+                    <a href="<?php echo getUrl('training-view'); ?>" class="img-wrap img-shadow img-hover"><img src="/assets/img/wp/2.jpg" alt=""></a>
+                    <h5><a href="<?php echo getUrl('training-view'); ?>">Pelatihan Pembuatan Kemasan Produk</a></h5>
+                    <p><b>Batch 2</b> / 5 Jan 2024 - 5 Feb 2024</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente magni accusantium neque blanditiis.</p>
+                    <a href="<?php echo getUrl('training-view'); ?>" class="btn btn-primary"><span>Selengkapnya</span></a>
                 </div>
             </div>
+
+            <!-- ### -->
+
+            <?php include(getPart() . 'pagination.php'); ?>
 
         </div>
     </section>
