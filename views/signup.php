@@ -74,7 +74,7 @@
 
             <!-- ## -->
 
-            <div class="text-center">Belum memiliki akun? <a href="<?php echo getUrl('signup'); ?>"><b>Mendaftar</b></a></a></div>
+            <div class="text-center">Sudah memiliki akun? <a href="<?php echo getUrl('signin'); ?>"><b>Masuk</b></a></a></div>
 
         </div>
     </div>
