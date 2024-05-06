@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-id">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Central of Excellence</title>
+    <link rel="icon" href="/assets/img/logo/favicon.png" type="image/svg+xml" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/template.min.css" />
+
+    <!-- JS -->
+    <script src="/assets/lib/jquery/jquery.min.js"></script>
+    <script src="/assets/lib/bootstrap/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <section class="navbar navbar-fix navbar-mobile">
+    </section>
+
+    <section class="tagihan pt-48">
+        <div class="container panel panel-warning">
+            <div class="panel-body wrapper j-fluid p-48">
+
+                <div class="wrapper-left">
+                    <h5>Tagihan Pembayaran</h5>
+                    <h2 class="text-danger mv-16"><sup>Rp</sup> 149.649</h2>
+                    <div class="formatting text-14">
+                        <ul class="pl-12">
+                            <li>No. Pesanan <b>INV/IFIK/0001234</b></li>
+                            <li>Batas pembayaran <b>24 Januari 2024 - 14:32</b>.</li>
+                            <li>Pastikan kamu melakukan transfer sebesar <b style="display:inline-flex">Rp 149.649</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ## -->
+
+                <div class="wrapper-right">
+                    <h6>Transfer ke Rekening Berikut Sebelum Batas Pembayaran</h6>
+                    <div href="#" class="btn-img img-shadow mt-20">
+                        <img src="/assets/img/payment/bni2.jpg" alt="" class="rounded-8 ph-8" style="border:2px solid var(--primary)">
+                        <span>
+                            <b class="text-16"><a class="copyBtn copyIcon" data-placement="top" data-copy="123456789-0" title="" data-original-title="Copied : 123456789-0">123456789-0</a></b>
+                            <small>a.n. Fakultas Industri Kreatif</small>
+                        </span>
+                    </div>
+                    <hr>
+                    <a class="btn btn-primary btn-icon" data-toggle="modal" data-target="#bukti_bayar"><span class="material-symbols">receipt_long</span><span>Kirim Bukti Transfer</span></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL BUKTI BAYAR -->
+    <div class="modal modal-480 modal-vh" id="bukti_bayar" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <form class="modal-content">
+
+                <div class="modal-header gap-16">
+                    <span class="material-symbols fill">receipt_long</span>
+                    <div>
+                        <h6>Kirim Bukti Pembayaran</h6>
+                    </div>
+                    <button type="button" class="btn btn-icon btn-28 btn-light btn-default btn-square" data-dismiss="modal"><span class="material-symbols">close</span></button>
+                </div>
+
+                <!-- ## -->
+
+                <div class="modal-body">
+                    <div class="formatting text-14">
+                        <ul class="pl-12">
+                            <li>Pastikan bukti transfer memiliki <b>No. Ref.</b></li>
+                            <li>Hubungi <b><a href="//wa.me" target="_blanks">admin</a></b> jika kamu melakukan tranfer setelah batas pembayaran habis.</li>
+                        </ul>
+                    </div>
+                    <div class="form-group input-file mt-24">
+                        <label>Pilih Gambar</label>
+                        <div class="input-group">
+                            <a class="input-group-btn btn btn-outline btn-default btn-icon browse_file"><span class="material-symbols">upload</span><span>Browse File</span></a>
+                            <input type="file" accept=".png,.jpg,.jpeg" />
+                            <div class="form-control placeholder">
+                                <span>No file chosen ...</span>
+                                <a class="btn btn-transparent btn-24 btn-square text-danger remove_file hidden"><span class="material-symbols">close</span></a>
+                            </div>
+                        </div>
+                        <div class="cover-wrap mt-16 hidden"></div>
+                    </div>
+                </div>
+
+                <!-- ## -->
+
+                <div class="modal-footer">
+                    <div class="flex j-fluid gap-16">
+                        <div class="btn btn-default btn-block btn-44" data-dismiss="modal"><span>Batalkan</span></div>
+                        <div class="btn btn-primary btn-block btn-44"><span>Kirim</span></div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <section class="page-title">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="/student.html">Student</a></li>
+                <li class="active"><span>Riwayat Pembelian</span></li>
+            </ol>
+            <h1>Riwayat Pembelian</h1>
+        </div>
+    </section>
+
+    <!-- WEB CONTENT -->
+    <section class="webcontent">
+        <div class="container">
+
+            <div class="table-odd tagihan-list">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-left w-30">No. Transaksi</th>
+                            <th class="text-left w-20">Tanggal</th>
+                            <th class="text-left w-30">Status</th>
+                            <th class="text-right w-20">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>INV/IFIK/0001234</b></td>
+                            <td>23 Jan 2024</td>
+                            <td>Menunggu Verifikasi Admin</td>
+                            <td class="text-right"><a class="text-primary text-hline text-semibold" data-toggle="modal" data-target="#detail_tagihan">Lihat Detail</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>INV/IFIK/0001234</b></td>
+                            <td>23 Jan 2024</td>
+                            <td>Pembelian Selesai</td>
+                            <td class="text-right"><a class="text-primary text-hline text-semibold" data-toggle="modal" data-target="#detail_tagihan">Lihat Detail</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ## -->
+
+            <nav class="flex mt-48">
+                <ul class="pagination pagination-40 ml-auto">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">5</a></li>
+                    <li> <a href="#" aria-label="Next"> <span class="material-symbols">arrow_right_alt</span> </a> </li>
+                </ul>
+            </nav>
+
+        </div>
+    </section>
+
+    <!-- MODAL DETAIL TAGIHAN -->
+    <div class="modal modal-480 modal-vh" id="detail_tagihan" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <form class="modal-content">
+
+                <div class="modal-header pv-20">
+                    <div>
+                        <h5>INV/IFIK/0001234</h5>
+                        <p style="color:var(--g4x)">Detail Transaksi</p>
+                    </div>
+                    <button type="button" class="btn btn-icon btn-28 btn-light btn-default btn-square" data-dismiss="modal"><span class="material-symbols">close</span></button>
+                </div>
+
+                <!-- ## -->
+
+                <div class="modal-body">
+                    <div class="list-group dotlog mb-24">
+                        <div class="list-group-item">
+                            <span>21 Jan 2024 - 14:02 WIB</span>
+                            <div>
+                                <b>Admin Sudah Memverifikasi Bukti Transfer</b>
+                                <small>Bukti transfer valid, kamu bisa menggunakan layanan yang dipilih. Selamat belajar!</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <span>21 Jan 2024 - 11:28 WIB</span>
+                            <div>
+                                <b>Bukti Transfer Sudah Dikirim</b>
+                                <small>Revisi bukti transfer.</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <span>21 Jan 2024 - 10:00 WIB</span>
+                            <div>
+                                <b>Admin Menolak Bukti Tranfer</b>
+                                <small>Bukti transfer tidak memiliki No. Ref.</small>
+                                <hr class="dash mv-8">
+                                <a class="btn btn-primary btn-light btn-block btn-36 mt-4" data-toggle="modal" data-target="#bukti_bayar" data-dismiss="modal"><span style="color:var(--primary-darker);margin-bottom:auto">Kirim Ulang Bukti Transfer</span></a>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <span>21 Jan 2024 - 08:45 WIB</span>
+                            <div>
+                                <b>Menunggu Verifikasi Admin</b>
+                                <small>Terima kasih sudah membayar tagihan dengan nomor transaksi <b>INV/IFIK/0001234</b>. Admin akan segera memverifikasi bukti transfer kamu.</small>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <span>21 Jan 2024 - 08:45 WIB</span>
+                            <div>
+                                <b>Bukti Transfer Sudah Dikirim</b>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <span>20 Jan 2024 - 13:22 WIB</span>
+                            <div>
+                                <b>Menunggu Pembayaran</b>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <span>20 Jan 2024 - 13:22 WIB</span>
+                            <div>
+                                <b>Pesanan Terdaftar di Sistem</b>
+                                <small>Lakukan transfer ke nomor rekening terlampir untuk mendapatkan akses layanan.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="microcredential-view.html" target="_blank" class="btn btn-default btn-outline btn-icon btn-block btn-0 p-16 gap-16">
+                        <span class="material-symbols fill">school</span>
+                        <span>
+                            <small>Micro-credential</small>
+                            <b>Mastering Potrait Photography</b>
+                        </span>
+                    </a>
+                    <div class="flex-v gap-12 mt-24">
+                        <div class="flex gap-12"><span style="color:var(--g4x)">Subtotal</span><b class="ml-auto">Rp 149.000</b></div>
+                        <div class="flex gap-12"><span style="color:var(--g4x)">Kode Unik</span><b class="ml-auto">Rp 649</b></div>
+                        <h6 class="flex gap-12 text-primary"><span class="ml-auto">Rp 149.649</span></h6>
+                    </div>
+                </div>
+
+                <!-- ## -->
+
+                <div class="modal-footer">
+                    <div class="flex j-fluid gap-16">
+                        <!-- <div class="btn btn-default btn-block btn-44" data-dismiss="modal"><span>Tutup</span></div> -->
+                        <div class="btn btn-primary btn-block btn-44"><span>Mulai Belajar</span></div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER LOGO COPYNAME -->
+    <section class="footer-logo">
+    </section>
+
+    <!-- PART JS -->
+    <script src="/assets/js/parts/nav-student.min.js"></script>
+    <script src="/assets/js/parts/foot.min.js"></script>
+
+    <!-- BODY JS -->
+    <script src="/assets/js/magia.min.js"></script>
+    <script src="/assets/js/template.min.js"></script>
+
+</body>
+
+</html>

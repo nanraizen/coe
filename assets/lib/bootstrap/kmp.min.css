@@ -1,0 +1,97 @@
+/*!
+ * Bootstrap Keyframes, Media and Print
+*/
+
+@-webkit-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+
+    to {
+        background-position: 0 0
+    }
+}
+
+@-o-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+
+    to {
+        background-position: 0 0
+    }
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+
+    to {
+        background-position: 0 0
+    }
+}
+
+@media print {
+    .hidden-print {
+        display: none !important
+    }
+}
+
+@media screen and (max-width:720px) {
+    .table-responsive {
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        overflow-y: hidden;
+        width: 100%;
+        border: 1px solid var(--g3x)
+    }
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+/* HIDDEN VISIBLE */
+.block{display:block!important}
+.visible-576,.visible-flex-576,.visible-inline-576,.visible-720,.visible-flex-720,.visible-inline-720,.visible-900,.visible-flex-900,.visible-inline-900,.visible-1100,.visible-flex-1100,.visible-inline-1100,.visible-1280,.visible-flex-1280,.visible-inline-1280{display:none!important}
+
+@media (max-width:576px){
+  .visible-576{display:block!important}
+  .visible-flex-576{display:flex!important}
+  .visible-inline-576{display:inline!important}
+  .hidden-576,.hidden-flex-576,.hidden-inline-576{display:none!important}
+}
+
+@media (max-width:720px){
+  .visible-720{display:block!important}
+  .visible-flex-720{display:flex!important}
+  .visible-inline-720{display:inline!important}
+  .hidden-720,.hidden-flex-720,.hidden-inline-720{display:none!important}
+}
+
+@media (max-width:900px){
+  .visible-900{display:block!important}
+  .visible-flex-900{display:flex!important}
+  .visible-inline-900{display:inline!important}
+  .hidden-900,.hidden-flex-900,.hidden-inline-900{display:none!important}
+}
+
+@media (max-width:1100px){
+  .visible-1100{display:block!important}
+  .visible-flex-1100{display:flex!important}
+  .visible-inline-1100{display:inline!important}
+  .hidden-1100,.hidden-flex-110,.hidden-inline-1100{display:none!important}
+}
+
+@media (max-width:1280px){
+  .visible-1280{display:block!important}
+  .visible-flex-1280{display:flex!important}
+  .visible-inline-1280{display:inline!important}
+  .hidden-1280,.hidden-flex-1280,.hidden-inline-1280{display:none!important}
+}

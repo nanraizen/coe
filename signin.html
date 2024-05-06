@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-id">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Central of Excellence</title>
+    <link rel="icon" href="/assets/img/logo/favicon.png" type="image/svg+xml" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/template.min.css" />
+
+    <!-- JS -->
+    <script src="/assets/lib/jquery/jquery.min.js"></script>
+    <script src="/assets/lib/bootstrap/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- BACKDROP -->
+    <div class="userform-backdrop img-wrap">
+        <img src="/assets/img/wp/wp0.jpg" alt="">
+    </div>
+
+    <!-- USERFORM -->
+    <div class="userform">
+        <div class="panel borderless">
+
+            <div class="userform-logo">
+                <a href="/index.html"><img src="/assets/img/logo/ifik-full.png" alt=""></a>
+                <h6>Masuk</h6>
+            </div>
+
+            <!-- ## -->
+
+            <form action="#" class="userform-form">
+                <div class="form-group">
+                    <div class="input-group focus-with">
+                        <span class="input-group-addon"><span class="material-symbols fill">account_circle</span></span>
+                        <div class="floating-label">
+                            <input type="text" class="form-control" name="username">
+                            <label><span>Username</span></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- ### -->
+                <div class="form-group">
+                    <div class="input-group focus-with">
+                        <span class="input-group-addon"><span class="material-symbols fill">password</span></span>
+                        <div class="floating-label">
+                            <input type="password" class="form-control" name="userpassword">
+                            <label><span>Password</span></label>
+                        </div>
+                        <span class="input-group-addon"><a href="/signin-password.html" class="text-primary text-hline">Lupa?</a></span>
+                    </div>
+                </div>
+                <!-- ### -->
+                <div class="form-group mt-24">
+                    <button type="submit" class="btn btn-primary btn-56 btn-block btn-icon"><span><b>MASUK</b></span><span class="material-symbols">login</span></button>
+                </div>
+            </form>
+
+            <!-- ## -->
+
+            <div class="text-center">Belum memiliki akun? <a href="/signup.html"><b>Mendaftar</b></a></a></div>
+
+        </div>
+    </div>
+
+    <!-- BODY JS -->
+    <script src="/assets/js/magia.min.js"></script>
+    <script src="/assets/js/template.min.js"></script>
+
+    <!-- BODY SCRIPT -->
+    <script>
+        $(function () {
+            var users = {
+                "admin": "admin.html",
+                "mentor": "mentor.html",
+                "student": "student.html"
+            };
+
+            $('.userform-form').submit(function (e) {
+                e.preventDefault();
+                var username = $('input[name=username]').val().trim();
+
+                if (username in users) {
+                    window.location.href = users[username];
+                } else {
+                    alert("gunakan username admin/mentor/student dengan password dikosongkan.");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

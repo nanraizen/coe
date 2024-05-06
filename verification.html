@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-id">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Central of Excellence</title>
+    <link rel="icon" href="/assets/img/logo/favicon.png" type="image/svg+xml" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/template.min.css" />
+
+    <!-- JS -->
+    <script src="/assets/lib/jquery/jquery.min.js"></script>
+    <script src="/assets/lib/bootstrap/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <section class="navbar navbar-fix navbar-mobile">
+    </section>
+
+    <!-- TITLE -->
+    <section class="page-title">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="/index.html">Home</a></li>
+                <li class="active"><span>Verifikasi Kredensial</span></li>
+            </ol>
+            <h1>Verifikasi Kredensial</h1>
+            <p>Verifikasi Kredensial Sertifikat, adalah sistem pencegahan penipuan yang digunakan untuk memverifikasi kredensial/keaslian dari sertifikat yang diterbitkan oleh Central of Excellence IFIK yang dimiliki oleh seluruh peserta yang telah hasil dalam menyelesaikan kelas/program.</p>
+        </div>
+    </section>
+
+    <!-- WEB CONTENT -->
+    <section class="webcontent">
+        <div class="container">
+
+            <form action="#" class="credential-form form-horizontal w-576">
+                <div class="form-group">
+                    <label class="w-30 control-label text-left">Nomor Sertifikat<abbr>*</abbr></label>
+                    <div class="w-70">
+                        <div class="input-group separated borderless">
+                            <input type="text" class="form-control text-center flex-unset w-25" value="MICR">
+                            <span class="input-group-addon borderless pl-0 pr-0"><span>-</span></span>
+                            <input type="text" class="form-control text-center" value="27A55T19R3">
+                            <span class="input-group-addon borderless pl-0 pr-0"><span>-</span></span>
+                            <input type="text" class="form-control text-center flex-unset w-20" value="AB">
+                        </div>
+                    </div>
+                </div>
+                <!-- ### -->
+                <div class="form-group">
+                    <label class="w-30"></label>
+                    <div class="w-70">
+                        <div class="btn btn-primary btn-icon credential-check"><span>Mulai Verifikasi</span></div>
+                        <!-- <button type="submit" class="btn btn-primary btn-icon credential-check"><span>Mulai Verifikasi</span></button> -->
+                    </div>
+                </div>
+            </form>
+
+            <!-- ## -->
+
+            <div class="credential-result panel panel-success mt-48 hidden">
+                <div class="panel-header icons">
+                    <div>
+                        <h6 style="margin-bottom:4px">Verifikasi Berhasil</h6>
+                        <span>Data ditemukan, nomor sertifikat valid.</span>
+                    </div>
+                    <span class="material-symbols ml-auto">done_all</span>
+                </div>
+                <div class="panel-body table-wrap borderless pt-8 pr-8 pb-8 pl-8">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Nomor</td>
+                                <td><b>MICR-27A55T19R3-AB</b></td>
+                            </tr>
+                            <tr>
+                                <td>Pemilik Kredensial</td>
+                                <td><b>Adnan Rahmadi</b></td>
+                            </tr>
+                            <tr>
+                                <td>Diterbitkan oleh</td>
+                                <td><b>IFIK - Central of Excellence</b></td>
+                            </tr>
+                            <tr>
+                                <td>Diterbitkan pada</td>
+                                <td><b>27 April 2023</b></td>
+                            </tr>
+                            <tr>
+                                <td>Sertifikat</td>
+                                <td><b>Microcredential - Mastering Potrait Photography</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER LOGO COPYNAME -->
+    <section class="footer-logo">
+    </section>
+
+    <!-- PART JS -->
+    <script src="/assets/js/parts/nav.min.js"></script>
+    <script src="/assets/js/parts/foot.min.js"></script>
+
+    <!-- BODY JS -->
+    <script src="/assets/js/magia.min.js"></script>
+    <script src="/assets/js/template.min.js"></script>
+
+    <!-- BODY SCRIPT -->
+    <script>
+        var nomorValid = {
+            'MICR-27A55T19R3-AB': true,
+        };
+
+        $('.credential-check').click(function () {
+            event.preventDefault();
+            $(this).html('<span>Memproses</span><span class="material-symbols rotate">progress_activity</span>').addClass('disabled');
+            setTimeout(function () {
+                var nomorPart1 = $('input:nth-child(1)').val();
+                var nomorPart2 = $('input:nth-child(3)').val();
+                var nomorPart3 = $('input:nth-child(5)').val();
+
+                var nomor = nomorPart1 + '-' + nomorPart2 + '-' + nomorPart3;
+
+                if (nomorValid[nomor]) {
+                    $('.credential-result').removeClass('hidden');
+                    $('.credential-false').remove();
+                } else {
+                    if ($('.credential-false').length === 0) {
+                        $('.credential-result').addClass('hidden');
+                        $('.credential-result').before('<div class="alert alert-danger mt-36 mb-0 credential-false"><p><b>Verifikasi Gagal</b>. Nomor sertifikat tidak ditemukan.</p></div>');
+                    }
+                }
+
+                $('.credential-check').html('<span>Mulai Verifikasi</span>').removeClass('disabled');
+            }, 2000);
+        });
+    </script>
+
+</body>
+
+</html>

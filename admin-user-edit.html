@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-id">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Central of Excellence</title>
+    <link rel="icon" href="/assets/img/logo/favicon.png" type="image/svg+xml" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/template.min.css" />
+
+    <!-- JS -->
+    <script src="/assets/lib/jquery/jquery.min.js"></script>
+    <script src="/assets/lib/bootstrap/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <section class="navbar navbar-fix navbar-mobile">
+    </section>
+
+    <!-- TITLE -->
+    <section class="page-title">
+        <div class="container flex">
+            <ol class="breadcrumb">
+                <li><a href="/admin.html">Admin</a></li>
+                <li><a href="/admin-user.html">Kelola Pengguna</a></li>
+                <li class="active"><span>Paimon</span></li>
+            </ol>
+            <h1>Paimon</h1>
+        </div>
+    </section>
+
+    <!-- WEB CONTENT -->
+    <section class="webcontent">
+        <div class="container wrapper">
+
+            <div class="wrapper-left wide">
+                <div class="form-group">
+                    <div class="input-group focus-with">
+                        <span class="input-group-addon"><span class="material-symbols fill">account_circle</span></span>
+                        <div class="floating-label">
+                            <div class="form-control placeholder"><span>username</span></div>
+                            <label><span>Username</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group focus-with">
+                        <span class="input-group-addon"><span class="material-symbols fill">assignment_ind</span></span>
+                        <div class="form-group-select floating-label">
+                            <label>Role</label>
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- ### -->
+                <hr class="dash">
+                <h6 class="block mb-12">Avatar</h6>
+                <div class="cover-wrap mb-16 w-200"><img src="/assets/img/ava/g0.jpg" alt=""></div>
+                <!-- ### -->
+                <hr class="dash">
+                <h6 class="block mb-12">Profil</h6>
+                <div class="form-group">
+                    <div class="input-group focus-with">
+                        <span class="input-group-addon"><span class="material-symbols fill">person</span></span>
+                        <div class="floating-label">
+                            <input type="text" class="form-control" name="userfullname">
+                            <label><span>Nama Lengkap</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group focus-with">
+                        <span class="input-group-addon"><span class="material-symbols fill">alternate_email</span></span>
+                        <div class="floating-label">
+                            <input type="email" class="form-control" name="useremail">
+                            <label><span>Email</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group focus-with">
+                        <span class="input-group-addon"><span class="fab fa-whatsapp"></span></span>
+                        <div class="floating-label">
+                            <input type="email" class="form-control" name="userwhatsapp">
+                            <label><span>No. WhatsApp</span></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- ### -->
+                <hr class="dash">
+                <h6 class="block mb-12">Layanan Dimiliki</h6>
+                <div class="flex-v gap-12">
+                    <a class="btn btn-default btn-outline btn-icon btn-block btn-0 p-16 gap-16 cursor-lock">
+                        <span class="material-symbols fill">school</span>
+                        <span class="text-ellipsis">
+                            <b>Mastering Potrait Photography</b>
+                            <small>Since 23 Jan 2024</small>
+                        </span>
+                    </a>
+                    <a class="btn btn-default btn-outline btn-icon btn-block btn-0 p-16 gap-16 cursor-lock">
+                        <span class="material-symbols fill">school</span>
+                        <span class="text-ellipsis">
+                            <b>Mastering Potrait Photography</b>
+                            <small>Since 23 Jan 2024</small>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ## -->
+
+            <div class="wrapper-right">
+                <div class="flex-v gap-12">
+                    <a href="#" class="btn btn-default btn-light btn-icon btn-block"><span class="material-symbols">device_reset</span><span>Reset Avatar</span></a>
+                    <a href="#" class="btn btn-default btn-light btn-icon btn-block"><span class="material-symbols">lock_reset</span><span>Reset Password</span></a>
+                    <hr class="dash mv-12">
+                    <a class="btn btn-info btn-light btn-icon btn-block" data-toggle="modal" data-target="#confirm_kunci"><span class="material-symbols">lock</span><span>Kunci Akun</span></a>
+                    <a class="btn btn-danger btn-light btn-icon btn-block" data-toggle="modal" data-target="#confirm_hapus"><span class="material-symbols">person_remove</span><span>Hapus Akun</span></a>
+                    <hr class="dash mv-12">
+                    <a href="#" class="btn btn-primary btn-icon"><span class="material-symbols">save</span><span>Simpan</span></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODAL CONFIRM HAPUS-->
+    <div class="modal modal-confirm" id="confirm_hapus" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <span class="material-symbols text-danger">person_remove</span>
+                    <div>
+                        <h6>Hapus Akun</h6>
+                        <p>Setelah dihapus akun dan pembelian tidak dapat dikembalikan.</p>
+                    </div>
+                </div>
+
+                <div class="modal-footer flex j-right gap-12">
+                    <div class="btn btn-danger btn-transparent btn-40" data-dismiss="modal"><span>Tutup</span></div>
+                    <div class="btn btn-danger btn-40"><span>Hapus</span></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CONFIRM KUNCI-->
+    <div class="modal modal-480 modal-vh" id="confirm_kunci" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <form class="modal-content">
+
+                <div class="modal-header">
+                    <div>
+                        <h6>Kunci Akun</h6>
+                    </div>
+                    <button type="button" class="btn btn-icon btn-28 btn-light btn-default btn-square" data-dismiss="modal"><span class="material-symbols">close</span></button>
+                </div>
+
+                <!-- ## -->
+
+                <div class="modal-body">
+                    <div class="floating-label">
+                        <label><span>Alasan</span></label>
+                        <textarea class="form-control auto-height" rows="1" placeholder="Textarea"></textarea>
+                    </div>
+                    <hr class="dash">
+                    <b>Buka Otomatis</b>
+                    <div class="form-group mt-12">
+                        <input class="form-control" type="date">
+                    </div>
+                </div>
+
+                <!-- ## -->
+
+                <div class="modal-footer">
+                    <div class="flex j-fluid gap-16">
+                        <div class="btn btn-info btn-block btn-44"><span>Kunci Akun</span></div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER LOGO COPYNAME -->
+    <section class="footer-logo">
+    </section>
+
+    <!-- PART JS -->
+    <script src="/assets/js/parts/nav-admin.min.js"></script>
+    <script src="/assets/js/parts/foot.min.js"></script>
+
+    <!-- BODY JS -->
+    <script src="/assets/js/magia.min.js"></script>
+    <script src="/assets/js/template.min.js"></script>
+
+    <script>
+        $('.navbar nav>ul>li>a:contains(Pengguna)').parents().addClass('active');
+    </script>
+
+</body>
+
+</html>

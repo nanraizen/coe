@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-id">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Central of Excellence</title>
+    <link rel="icon" href="/assets/img/logo/favicon.png" type="image/svg+xml" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/template.min.css" />
+
+    <!-- JS -->
+    <script src="/assets/lib/jquery/jquery.min.js"></script>
+    <script src="/assets/lib/bootstrap/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <section class="navbar navbar-fix navbar-mobile">
+    </section>
+
+    <!-- TITLE -->
+    <section class="page-title">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="/admin.html">Admin</a></li>
+                <li class="active"><span>Konfirmasi Pembelian</span></li>
+            </ol>
+            <h1>Konfirmasi Pembelian</h1>
+            <div class="flex gap-36 mt-12">
+                <div class="btn btn-transparent btn-icon btn-0 cursor-lock gap-12"><span class="material-symbols fill">account_balance_wallet</span><span><small>total income</small><b>Rp. 8.200.000</b></span></div>
+                <div class="btn btn-transparent btn-icon btn-0 cursor-lock gap-12"><span class="material-symbols fill">description</span><span><small>kode unik</small><b>Rp. 128.230</b></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WEB CONTENT -->
+    <section class="webcontent">
+        <div class="container">
+
+            <div class="sortfilter">
+                <div class="input-icon">
+                    <label class="material-symbols fill">search</label>
+                    <input type="passw ord" class="form-control" placeholder="Pencarian ...">
+                </div>
+                <!-- ### -->
+                <a class="btn btn-transparent btn-icon btn-pill" data-toggle="collapse" data-target="#ft_cats"><span class="material-symbols">filter_list</span><span>Filter</span></a>
+                <!-- ### -->
+                <div class="dropdown sort">
+                    <button class="btn btn-transparent btn-icon pl-0 pr-0" data-toggle="dropdown"><span><span>Urutkan Berdasarkan</span><b>Terbaru</b></span><span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li class="active"><a href="#"><span>Terbaru</span></a></li>
+                        <li><a href="#"><span>Terlama</span></a></li>
+                    </ul>
+                </div>
+                <!-- ### -->
+                <div class="filter collapse" id="ft_cats">
+                    <div class="flex gap-12">
+                        <a href="#" class="btn btn-primary btn-light btn-icon"><span class="material-symbols">clear_all</span><span>Semua</span></a>
+                        <a href="#" class="btn btn-default btn-light btn-icon"><span class="material-symbols">school</span><span>Micro-credential</span></a>
+                        <a href="#" class="btn btn-default btn-light btn-icon"><span class="material-symbols">license</span><span>Sertifikasi</span></a>
+                        <a href="#" class="btn btn-default btn-light btn-icon"><span class="material-symbols">model_training</span><span>Pelatihan</span></a>
+                        <a href="#" class="btn btn-default btn-light btn-icon"><span class="material-symbols">stream</span><span>Workshop</span></a>
+                        <hr class="mv-12">
+                        <h6 class="w-100">Status</h6>
+                        <a href="#" class="btn btn-info btn-light btn-36"><span>Menunggu Pembayaran</span></a>
+                        <a href="#" class="btn btn-warning btn-light btn-36"><span>Berlangsung</span></a>
+                        <a href="#" class="btn btn-success btn-light btn-36"><span>Selesai</span></a>
+                        <a href="#" class="btn btn-danger btn-light btn-36"><span>Kadaluwarsa</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ## -->
+
+            <div class="table-odd tagihan-list">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-left w-30">No. Transaksi</th>
+                            <th class="text-left w-20">Tanggal</th>
+                            <th class="text-left w-30">Status</th>
+                            <th class="text-right w-20">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>INV/IFIK/0001234</b></td>
+                            <td>23 Jan 2024</td>
+                            <td>Menunggu Verifikasi Admin</td>
+                            <td class="text-right"><a href="admin-trx.html" class="text-primary text-hline text-semibold">Lihat Detail</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>INV/IFIK/0001234</b></td>
+                            <td>23 Jan 2024</td>
+                            <td>Pembelian Selesai</td>
+                            <td class="text-right"><a href="admin-trx.html" class="text-primary text-hline text-semibold">Lihat Detail</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ## -->
+
+            <nav class="flex mt-48">
+                <ul class="pagination pagination-40 ml-auto">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">5</a></li>
+                    <li> <a href="#" aria-label="Next"> <span class="material-symbols">arrow_right_alt</span> </a> </li>
+                </ul>
+            </nav>
+
+        </div>
+    </section>
+
+    <!-- FOOTER LOGO COPYNAME -->
+    <section class="footer-logo">
+    </section>
+
+    <!-- PART JS -->
+    <script src="/assets/js/parts/nav-admin.min.js"></script>
+    <script src="/assets/js/parts/foot.min.js"></script>
+
+    <!-- BODY JS -->
+    <script src="/assets/js/magia.min.js"></script>
+    <script src="/assets/js/template.min.js"></script>
+
+</body>
+
+</html>

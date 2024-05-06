@@ -1,0 +1,151 @@
+/*!
+ * Magia - Root
+*/
+
+:root {
+    --font              : 'Poppins';
+    --font-2            : 'Space Mono';
+    --font-msr          : 'Material Symbols Rounded';
+    --font-regular      : 400;
+    --font-medium       : 500;
+    --font-semibold     : 600;
+    --font-bold         : 700;
+    --font-size         : 14px;
+    --backdrop          : rgba(24 24 27 / .65);
+    --cubic             : cubic-bezier(.58, .01, .04, .98);
+    --img-shadow        : 0 2px 6px -2px rgba(0 0 0 / .1);
+
+    --bg                : #FFFFFF;
+    --txt               : #3F3F46;
+    
+    --g0x               : #F9FAFB;
+    --g1x               : #F4F4F5;
+    --g2x               : #E4E4E7;
+    --g3x               : #D4D4D8;
+    --g4x               : #A1A1AA;
+    --g5x               : #71717A;
+    --g6x               : #52525B;
+    --odd               : rgba(24 24 27 / .04);
+
+    --default           : #E4E4E7;
+    --primary           : #FE9B1F;
+    --success           : #4CAF50;
+    --info              : #00BCD4;
+    --warning           : #FFC107;
+    --danger            : #F44336;
+
+    --brown             : #795548;
+    --purple            : #673AB7;
+    --lime              : #C0CA33;
+    
+    --white             : #FFFFFF;
+    --white-fix         : #FFFFFF;
+    --dark              : #3F3F46;
+    --dark-fix          : #3F3F46;
+
+    --default-darker    : #9CA3AF;
+    --primary-darker    : #FF6F00;
+    --success-darker    : #2E7D32;
+    --info-darker       : #00838F;
+    --warning-darker    : #FF6F00;
+    --danger-darker     : #C62828;
+
+    --brown-darker      : #4E342E;
+    --purple-darker     : #4527A0;
+    --lime-darker       : #827717;
+
+    --default05         : #E4E4E705;
+    --default15         : #E4E4E715;
+    --default25         : #E4E4E725;
+    --default35         : #E4E4E735;
+    --default45         : #E4E4E745;
+    --default75         : #E4E4E775;
+
+    --primary05         : #FE9B1F05;
+    --primary15         : #FE9B1F15;
+    --primary25         : #FE9B1F25;
+    --primary35         : #FE9B1F35;
+    --primary45         : #FE9B1F45;
+
+    --success05         : #4CAF5005;
+    --success15         : #4CAF5015;
+    --success25         : #4CAF5025;
+    --success35         : #4CAF5035;
+    --success45         : #4CAF5045;
+
+    --info05            : #00BCD405;
+    --info15            : #00BCD415;
+    --info25            : #00BCD425;
+    --info35            : #00BCD435;
+    --info45            : #00BCD445;
+
+    --warning05         : #FFC10705;
+    --warning15         : #FFC10715;
+    --warning25         : #FFC10725;
+    --warning35         : #FFC10735;
+    --warning45         : #FFC10745;
+
+    --danger05          : #F4433605;
+    --danger15          : #F4433615;
+    --danger25          : #F4433625;
+    --danger35          : #F4433635;
+    --danger45          : #F4433645;
+    
+    --dark05            : #3F3F4605;
+    --dark15            : #3F3F4615;
+    --dark25            : #3F3F4625;
+    --dark35            : #3F3F4635;
+    --dark45            : #3F3F4645;
+    
+    --brown05           : #79554805;
+    --brown15           : #79554815;
+    --brown25           : #79554825;
+    --brown35           : #79554835;
+    --brown45           : #79554845;
+    
+    --purple05          : #673AB705;
+    --purple15          : #673AB715;
+    --purple25          : #673AB725;
+    --purple35          : #673AB735;
+    --purple45          : #673AB745;
+    
+    --lime05            : #C0CA3305;
+    --lime15            : #C0CA3315;
+    --lime25            : #C0CA3325;
+    --lime35            : #C0CA3335;
+    --lime45            : #C0CA3345;
+    
+    --white05           : #FFFFFF05;
+    --white15           : #FFFFFF15;
+    --white25           : #FFFFFF25;
+    --white35           : #FFFFFF35;
+    --white45           : #FFFFFF45;
+}
+
+.dark:root {
+    --bg                : #1C1B1F;
+    --txt               : #E4E4E7;
+}
+
+input[type='file'],
+.btn>span:not([class]),
+.input-group-addon a,
+.input-group-addon span:not([class]),
+.form-group .label-static,
+.form-control,
+.form-horizontal .form-group>label,
+.floating-label label span,
+.nav-tabs>li>a span:not([class]),
+.nav-pills>li>a span:not([class]),
+.dropdown-menu li a>*:not([class]),
+.navbar nav>ul>li>a:not(.btn)>*:not([class]),
+.accordion .panel-heading span:not([class]) {
+    padding-bottom: 0;
+}
+
+.checkbox label span:not([class]),
+.radio label span:not([class]),
+.checkbox-toggle span:not([class]),
+.form-control.fake span:not([class]) {
+    padding-bottom: 0;
+}
